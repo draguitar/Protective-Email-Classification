@@ -39,19 +39,19 @@ print('Security_B size:{}\nSecurity_C size:{}'.format(b_vec.shape[0], c_vec.shap
 
 
 # %%
-def test():
-    b_vec_index = list(range(0, b_vec.shape[0]))
-    c_vec_index = list(range(b_vec.shape[0], b_vec.shape[0]+c_vec.shape[0]))
-    
-    
-    b_array = np.full(b_vec.shape[0], 'B')
-    c_array = np.full(c_vec.shape[0], 'C')
-    security_list = np.append(b_array, c_array)
-    
-    
-    #security_list = ['B' for _ in range(b_vec.shape[0])]
-    #for _ in range(b_vec.shape[0], b_vec.shape[0]+c_vec.shape[0]):
-    #    security_list.append('C') 
+
+b_vec_index = list(range(0, b_vec.shape[0]))
+c_vec_index = list(range(b_vec.shape[0], b_vec.shape[0]+c_vec.shape[0]))
+
+
+b_array = np.full(b_vec.shape[0], 'B')
+c_array = np.full(c_vec.shape[0], 'C')
+security_list = np.append(b_array, c_array)
+
+
+#security_list = ['B' for _ in range(b_vec.shape[0])]
+#for _ in range(b_vec.shape[0], b_vec.shape[0]+c_vec.shape[0]):
+#    security_list.append('C') 
 
 # %%
 # TF-IDF
